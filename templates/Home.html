@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/static/Images/IconFazel.jpg">
-    <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="theme-color" content="#333"/>
-      
+
     <title>{{ Info.NameAndFamily }}</title>
     <link rel="stylesheet" href="{% static 'FontAwesome/css/all.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Base/Index.css' %}">
@@ -143,6 +143,11 @@
                 <p>ارتباط با من</p>
             </div>
             <div class="Content">
+                <div>
+                    <i class="fab fa-github" GithubIcon
+                       onclick="GoToUrl('https://github.com/{{ Info.UserGithub }}')"></i>
+                    <p>Github</p>
+                </div>
                 <div>
                     <i class="fab fa-instagram" InstagramIcon
                        onclick="GoToUrl('https://instagram.com/{{ Info.UserInstagram }}')"></i>

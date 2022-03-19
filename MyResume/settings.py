@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-th1m!ry49023lx=k$grmy#e#@mxr^y7w#n_@0i76rx&g!9)*u*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['fazelmomeni.codevar.ir','www.fazelmomeni.codevar.ir']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -74,15 +74,8 @@ WSGI_APPLICATION = 'MyResume.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'USER':'',
-        'PASSWORD':'',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
-        'OPTIONS':{
-            'sql_mode':'STRICT_ALL_TABLES'
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

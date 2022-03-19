@@ -4,7 +4,7 @@ import random
 
 
 def UploadSrcImage(instance,path):
-    N = random.randint(1,99999999999999999999999)
+    N = random.randint(1,99999999)
     return f"ImagesWorkSample/{N}/Image.{path.split('.')[-1]}"
 
 
@@ -42,6 +42,7 @@ class MyInfo(models.Model):
     UserInstagram = models.CharField(max_length=100)
     UserTelegram = models.CharField(max_length=100)
     UserEmail = models.CharField(max_length=100)
+    UserGithub = models.CharField(max_length=100)
 
     def __str__(self):
         return 'Fazel Momeni'
